@@ -1,0 +1,8 @@
+  "Authentication": {   #regex:"Authentication":\s*\{((\n*\s*)*"[^"]+":\s*[^\s[{][^\n]*)*#
+    "Bearer": {
+      "Authority": "https://login.microsoftonline.com/c5bd62db-6abf-481e-aef8-96311cf4b2e3/",
+      "Audience": "api://b79df7e9-8a43-45a1-91a0-de3273df14c2"
+    },
+    "AuthenticationSchemes": [ #regex:"AuthenticationSchemes":\s*\[#
+        "Bearer",
+  }   #ignore#
