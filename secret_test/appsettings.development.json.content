@@ -1,0 +1,21 @@
+  "Authentication": {   #regex:"Authentication":\s*\{((\n*\s*)*"[^"]+":\s*[^\s[{][^\n]*)*#
+    "Bearer": {
+      //See https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authentication.jwtbearer.jwtbeareroptions#properties
+      //  for proper configuration
+      "Authority": "https://login.microsoftonline.com/c5bd62db-6abf-481e-aef8-96311cf4b2e3/", 
+      "Audience": "api://b79df7e9-8a43-45a1-91a0-de3273df14c2"
+      
+      // These values are available for configuraiton but should just use defaults unless more complex configuration is required
+      // "Challenge": "This request requires a valid Bearer access token provided from https://login.microsoftonline.com/tenantId",
+      // "MetadataAddress": "https://login.microsoftonline.com/{tenantId}/v2.0/.well-known/openid-configuration",
+      // "IncludeErrorDetails": false,
+      // "RequireHttpsMetadata": true,
+      // "AutomaticRefreshInterval": "1:00:00:00",
+      // "RefreshInterval": "00:00:10:00",
+      // "RefreshOnIssuerKeyNotFound": true,
+      // "MapInboundClaims": true,
+      // "SaveToken": true
+    },
+    "AuthenticationSchemes": [ #regex:"AuthenticationSchemes":\s*\[#
+        "Bearer",
+  }   #ignore#
